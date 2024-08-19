@@ -12,12 +12,8 @@ type beforeAfterImage = {
 const BeforeAfterImage = ({ beforeImage, afterImage }: beforeAfterImage) => {
   const afterImageRef = useRef(null)
 
-  console.log("before: ", beforeImage)
-
   useEffect(() => {
-    gsap
-      .to(afterImageRef.current, { opacity: 1, duration: 1, delay: 3 })
-      .then(() => console.log(afterImageRef.current))
+    gsap.to(afterImageRef.current, { opacity: 1, duration: 1, delay: 3 })
   }, [])
 
   return (

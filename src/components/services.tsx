@@ -7,14 +7,14 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="flex w-full flex-col items-center justify-center gap-5 px-4 pb-24 pt-20 lg:px-40"
+      className="flex w-full flex-col items-center justify-center gap-2 px-4 pb-24 pt-20 lg:px-40"
     >
       <SectionHeader title="Our Services" />
       <p>
         Have a look at this list of services we offer and call us for more
         information.
       </p>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-3 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         {servicesData.map((service) => (
           <div
             className="flex w-full flex-col justify-between gap-2 rounded-md border  p-5 md:w-fit"

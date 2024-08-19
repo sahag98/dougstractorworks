@@ -18,7 +18,7 @@ import { Button } from "./ui/button"
 
 const AboutImages = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: false })
+    Autoplay({ delay: 4000, stopOnInteraction: false })
   )
 
   const [api, setApi] = React.useState<CarouselApi>()

@@ -10,6 +10,7 @@ import Footer from "@/components/footer"
 import { Icons } from "@/components/icons"
 import { ModeToggle } from "@/components/mode-toggle"
 import Services from "@/components/services"
+import Testimonials from "@/components/testimonials"
 import Tractor from "@/components/tractor"
 
 export default function Home() {
@@ -20,7 +21,11 @@ export default function Home() {
           {siteConfig.name}
         </h1>
         <p className="max-w-[42rem] text-start leading-normal text-muted-foreground sm:text-xl sm:leading-8 lg:text-center">
-          {siteConfig.description}
+          {siteConfig.description} in
+          <span className="font-semibold">
+            {" "}
+            White Fence Farms Palmdale, CA.
+          </span>
         </p>
         <div className="flex w-full flex-col justify-center gap-2 lg:flex-row">
           <Link
@@ -68,6 +73,7 @@ export default function Home() {
         <AboutImages />
       </div>
       <Services />
+      <Testimonials />
       <FAQ />
     </main>
   )

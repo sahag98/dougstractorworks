@@ -59,13 +59,13 @@ const FAQ = () => {
   return (
     <div
       id="faq"
-      className="flex w-full flex-col items-center gap-3 bg-primary/25 px-4 py-12 text-foreground  md:px-10 md:py-24 lg:px-48 lg:py-32"
+      className="flex w-full flex-col items-center gap-2 bg-primary/25 px-4 py-12 text-foreground  md:px-10 md:py-24 lg:px-48 lg:py-32"
     >
-      <SectionHeader title="FAQ" />
+      <SectionHeader title="Frequently Asked Questions" />
       <p className="text-lg">Here are some frequently asked questions.</p>
-      <div className="flex w-full items-center justify-between gap-10">
+      <div className="mt-3 flex w-full items-center justify-between gap-10">
         <Accordion className="flex-1" type="single" collapsible>
-          {faqArray.map((faq) => (
+          {/* {faqArray.map((faq) => (
             <AccordionItem key={faq.id} value={faq.question}>
               <AccordionTrigger className="text-lg">
                 {faq.question}
@@ -74,7 +74,7 @@ const FAQ = () => {
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
-          ))}
+          ))} */}
         </Accordion>
         <Image
           alt="faq image"

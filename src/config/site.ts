@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
   author: "Doug's Tractor Works",
   logo: "/website-logo.png",
   description:
-    "We provide all kinds of tractor services such as: Weed abatement, loader work, mowing fields, plowing, and more.",
+    "We provide all kinds of tractor services such as: Weed abatement, mowing fields, and more",
   keywords: ["Next.js", "React", "Tailwind CSS", "Radix UI", "shadcn/ui"],
   url: {
     base: env.NEXT_PUBLIC_APP_URL,

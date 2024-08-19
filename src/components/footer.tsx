@@ -78,16 +78,14 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-2 text-foreground">
             <h5 className="font-bold">Service Areas</h5>
-            <p>
-              Anywhere within LA County (and surrounding borders) including:
-            </p>
-            <ul className="space-y-2 ">
+            <p>Anywhere within the White Fence Farm Area in Palmdale, CA.</p>
+            {/* <ul className="space-y-2 ">
               <li>- Antelope Valley (Lancaster, Palmdale, etc.)</li>
               <li>- LA (Inglewood, Torrence, Longbeach)</li>
               <li>- Hollywood (Santa Monica, UCLA, Beverly Hills)</li>
               <li>- San Fernando Valley (Northridge, Burbank, Glendale)</li>
               <li>- Santa Clarita (Valencia, New Hall, Saugus)</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="not-prose flex flex-col justify-between gap-6 border-t border-t-foreground pt-5 md:flex-row md:items-center md:gap-2">
