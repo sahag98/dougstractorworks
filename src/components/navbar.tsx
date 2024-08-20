@@ -73,7 +73,7 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link href={"#services"}>Services</Link>
+            <Link href={"/#services"}>Services</Link>
             <Link
               className={cn(
                 pathname === "/gallery" && " font-semibold text-primary"

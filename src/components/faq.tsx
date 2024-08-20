@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import { XIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import {
@@ -15,45 +16,28 @@ const FAQ = () => {
   const faqArray = [
     {
       id: 1,
-      question: "What is Mobile Auto Detailing?",
+      question: "How much do you charge?",
       answer:
-        "Mobile Detailing means you can experience quality auto detailing service for your car at home or work. I come to you, and need nothing but your car keys (if you selected any interior services). This method ensures quality and convenience for you and your car!",
+        "We must first set an appointment to see the work you would like done. We do not give quotes over the phone. We will inspect the work you need done, the size of your property, entry requirements, and a few other items we must inspect first.",
     },
     {
       id: 2,
-      question: "What is the Mobile Auto Detailing Process?",
+      question: "How much do you charge for your home or property inspection?",
       answer:
-        "This is the process - first book your appointment online or call for a personalized service; updates with your appointment will be made accordingly, (including booking fee). The booking will go towards servicing your vehicle. I then go over to your location to greet you and look over your vehicle with you (if you’re available) to confirm what services you’ve requested along with recommendations of services needed for it. Then I pull out everything needed to service your car, including my own power and electricity; if requested, you can get 10% off of services for allowing me to connect to your water and electricity (when available). On average, my services may take anywhere between 1-5 hours (depending on the condition of the vehicle and the services you’ve requested for it). If any additional charges are made, they will be made upfront before I begin servicing your vehicle. Final payments will be made after the vehicle has been serviced along with satisfaction from you (the customer)!",
+        "his is a free service if you are within 18 miles of the Lancaster area. If you live further than that we have a minimum charge plus a mileage charge.",
     },
     {
       id: 3,
-      question: "What Areas do you Service?",
+      question:
+        "How do we get started to contract Doug’s Tractor Works to finish my work?",
       answer:
-        "My detailing services come to you if you reside within LA County and surrounding borders: Antelope Valley (Lancaster, Palmdale, etc.) LA (Inglewood, Torrence, Longbeach, Hollywood (Santa Monica, UCLA, Beverly Hills), San Fernando Valley (Northridge, Burbank, Glendale), Santa Clarita (Valencia, New Hall, Saugus)",
+        "I will give you a contract with all the services that we will perform with the price included. If you are in agreement you sign our contract and we will place you on our online scheduling system.",
     },
     {
       id: 4,
-      question: "Do you need Anything from me?",
+      question: "How do we pay for your services?",
       answer:
-        "YES! These 3 things I need from you: Pictures (highly recommended) - this is to ensure what exactly you’re asking of me to do and make helpful recommendations of what you may actually need. This also ensures a better time estimate for me to service your car and quote upfront fee (if needed). Keys - I only need them if you’ve requested an interior service and/or requested an engine bay service. Power & Water (if requested and/or needed) - need these to perform essential services (wash, vacuuming, etc.)",
-    },
-    {
-      id: 5,
-      question: "What Forms of Payment do you take?",
-      answer:
-        "I primarily take online payment (through my website). I also take app payments (Zelle, Cash App, Venmo, PayPal, and Square). Lastly, I take cash or checks. I always ask for payment after a job is completed to ensure you are satisfied!",
-    },
-    {
-      id: 6,
-      question: "How long does it take?",
-      answer:
-        "Depending on the package you have selected, a job may range from an hour to 5 hours. When booking an auto detail, I will always give you an estimate for how long a job will be, and schedule you accordingly.",
-    },
-    {
-      id: 7,
-      question: "What is the booking fee and what is it for?",
-      answer:
-        "The booking fee is a fee combined of $10 & 25% down payment of your total service booking. This is to ensure confirmation of your appointment and will be used towards your service. After I’m done with servicing your vehicle, you pay the difference.",
+        " We require 50% up front the day we start your work. No work will be started without the 50% up front payment. The balance will be paid when we complete your work. We take as payment Cash, Zelle, or Venmo.",
     },
   ]
   return (
@@ -65,16 +49,16 @@ const FAQ = () => {
       <p className="text-lg">Here are some frequently asked questions.</p>
       <div className="mt-3 flex w-full items-center justify-between gap-10">
         <Accordion className="flex-1" type="single" collapsible>
-          {/* {faqArray.map((faq) => (
+          {faqArray.map((faq) => (
             <AccordionItem key={faq.id} value={faq.question}>
-              <AccordionTrigger className="text-lg">
+              <AccordionTrigger className="text-left text-lg md:text-xl">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-base">
+              <AccordionContent className="text-base md:text-lg">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
-          ))} */}
+          ))}
         </Accordion>
         <Image
           alt="faq image"

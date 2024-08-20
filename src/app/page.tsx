@@ -31,6 +31,7 @@ export default function Home() {
           <Link
             href={`tel:${siteConfig.links.tel}`}
             target="_blank"
+            rel="noopener noreferrer"
             className={cn(
               buttonVariants({ size: "lg" }),
               "animate-buttonheartbeat cursor-pointer text-base font-bold"
@@ -38,13 +39,14 @@ export default function Home() {
           >
             Get A Quote
           </Link>
-
           <Link
             href={"/gallery"}
             className={cn(
               buttonVariants({ size: "lg", variant: "secondary" }),
               "cursor-pointer text-sm  font-bold lg:text-lg"
             )}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             View our Best Work
           </Link>
