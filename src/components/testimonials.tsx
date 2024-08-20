@@ -15,7 +15,10 @@ export default function Testimonials() {
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
-            <div className="rounded-lg border bg-background p-6 shadow-sm">
+            <div
+              key={testimonial.id}
+              className="rounded-lg border bg-background p-6 shadow-sm"
+            >
               <div key={testimonial.id} className="flex items-start gap-4">
                 <User className="h-12 w-12" />
                 {/* <img
