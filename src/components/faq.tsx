@@ -24,7 +24,7 @@ const FAQ = () => {
       id: 2,
       question: "How much do you charge for your home or property inspection?",
       answer:
-        "his is a free service if you are within 18 miles of the Lancaster area. If you live further than that we have a minimum charge plus a mileage charge.",
+        "This is a free service if you are within 18 miles of the Lancaster area. If you live further than that we have a minimum charge plus a mileage charge.",
     },
     {
       id: 3,

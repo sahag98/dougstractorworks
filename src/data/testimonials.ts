@@ -9,7 +9,15 @@ export const testimonials = [
   {
     id: 2,
     name: "Anna B",
+    title: "White Fences Farms Resident",
     content:
       "Doug’s Tractor Works did an amazing job in my backyard.  I own a 2.5 acre property that had weeds over six feet tall. After Doug as done my backyard looked amazing. He mowed down all the tall weeds that were so thick you couldn’t even walk through my backyard.  Doug’s Tractor Works was extremely professional and so helpful. I highly recommend his company to anyone needing tractor work done. Thank you very much for your professional services.",
+  },
+  {
+    id: 3,
+    name: "Kamal Abdul-Jabbaar",
+    title: "White Fences Farms Resident",
+    content:
+      "If you are need of tractor services, I  highly recommend Doug's Tractor Works.  I have 2 1/2 acres of land located in the White Fence Farms area of Lancaster.  After the rainy seasons, 2 of the acres have 3-5 feet tall overgrown brush. For the last 2 years, I  have employed DTW.  Douglas Pistone, the owner, is prompt, meticulous, and a true professional.  His prices are the best in the Antelope Valley.You won't regret doing business with Doug!",
   },
 ]

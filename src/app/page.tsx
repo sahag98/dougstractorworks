@@ -22,10 +22,7 @@ export default function Home() {
         </h1>
         <p className="max-w-[42rem] text-start leading-normal text-muted-foreground sm:text-xl sm:leading-8 lg:text-center">
           {siteConfig.description} in
-          <span className="font-semibold">
-            {" "}
-            White Fence Farms Palmdale, CA.
-          </span>
+          <span className="font-semibold"> Antelope Valley, CA</span>
         </p>
         <div className="flex w-full flex-col justify-center gap-2 lg:flex-row">
           <Link
