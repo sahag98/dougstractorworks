@@ -46,7 +46,7 @@ export default function Footer() {
             </Link>
             <Link
               className="text-lg font-medium underline underline-offset-2"
-              href="#services"
+              href="/#services"
             >
               Services
             </Link>
@@ -64,9 +64,9 @@ export default function Footer() {
             </Link>
             <Link
               className="text-lg font-medium underline underline-offset-2"
-              href="#faq"
+              href="/#faq"
             >
-              Gallery
+              Faq
             </Link>
           </div>
           <div className="flex flex-col gap-2 text-foreground">
@@ -74,7 +74,7 @@ export default function Footer() {
             <h4 className="font-bold">Summer</h4>
             <span className="font-medium">M-TH: 5:30am-10am & 5pm-8pm</span>
             <span className="font-medium">F: 8am - 2pm</span>
-            <span className="font-medium">SAT&SUN: 2pm - 8pm</span>
+            <span className="font-medium">SAT: 2pm - 8pm</span>
             <h4 className="font-bold">Winter</h4>
             <span className="font-medium">M-F: 8am-6pm</span>
 
