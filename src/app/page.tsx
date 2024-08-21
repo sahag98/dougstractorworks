@@ -1,11 +1,9 @@
-import { CldImage } from "next-cloudinary"
 import { Link } from "next-view-transitions"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import AboutImages from "@/components/about-images"
-import CloudImage from "@/components/cld-image"
 import FAQ from "@/components/faq"
 import Services from "@/components/services"
 import Testimonials from "@/components/testimonials"

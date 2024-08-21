@@ -2,7 +2,6 @@ import React from "react"
 import { beforeAfterImages } from "@/data/beforeAfterImages"
 import { XIcon } from "lucide-react"
 
-import { getVideos } from "@/lib/cloudflare"
 import cloudinary from "@/lib/cloudinary"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import CloudImage from "@/components/cld-image"
