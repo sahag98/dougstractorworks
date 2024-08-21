@@ -1,9 +1,11 @@
+import { CldImage } from "next-cloudinary"
 import { Link } from "next-view-transitions"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import AboutImages from "@/components/about-images"
+import CloudImage from "@/components/cld-image"
 import FAQ from "@/components/faq"
 import Services from "@/components/services"
 import Testimonials from "@/components/testimonials"
@@ -40,6 +42,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
       <div className="flex w-full flex-col items-center justify-between gap-3 bg-primary/25 px-4 py-12 text-foreground md:py-24 lg:flex-row lg:px-40 lg:py-32">
         <section className="flex flex-col items-start gap-3">
           <h3 className="text-lg font-medium">About</h3>
