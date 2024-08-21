@@ -8,6 +8,8 @@ import { Link } from "next-view-transitions"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 
+import { Button } from "./ui/button"
+
 const Navbar = () => {
   const pathname = usePathname()
 
@@ -84,7 +86,15 @@ const Navbar = () => {
             </Link>
             <Link href={"#faq"}>FAQ</Link>
           </ul>
+          <Link className="mt-4 flex md:hidden" href={"/book"}>
+            <Button className="bg-primary text-base text-white">
+              Book Now
+            </Button>
+          </Link>
         </div>
+        <Link className="hidden md:block" href={"/book"}>
+          <Button className="bg-primary text-base text-white">Book Now</Button>
+        </Link>
       </div>
     </nav>
   )

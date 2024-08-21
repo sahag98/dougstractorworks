@@ -30,7 +30,7 @@ export default function Footer() {
               ></Image>
             </Link>
             <p className="text-lg text-foreground">
-              <Balancer>{siteConfig.description}</Balancer>
+              <Balancer>{siteConfig.description}.</Balancer>
             </p>
             <Link href={`tel:${siteConfig.links.tel}`} target="_blank">
               <Button className="text-base">Get A Quote</Button>
@@ -71,14 +71,18 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-2 text-foreground">
             <h5 className="mb-2">Business Hours</h5>
-            <span className="font-medium">M-TH : 5:30am-10am & 5pm-8pm</span>
-            <span className="font-medium">F: 2pm - 8pm</span>
-            <span className="font-medium">SAT&SUN : 2pm - 8pm</span>
-            {/* <span>$60 fee for booking on off days (Sun and Mon)</span> */}
+            <h4 className="font-bold">Summer</h4>
+            <span className="font-medium">M-TH: 5:30am-10am & 5pm-8pm</span>
+            <span className="font-medium">F: 8am - 2pm</span>
+            <span className="font-medium">SAT&SUN: 2pm - 8pm</span>
+            <h4 className="font-bold">Winter</h4>
+            <span className="font-medium">M-F: 8am-6pm</span>
+
+            <span className="font-medium">SAT: 2pm - 6pm</span>
           </div>
           <div className="flex flex-col gap-2 text-foreground">
-            <h5 className="font-bold">Service Areas</h5>
-            <p>Anywhere within the White Fence Farm Area in Palmdale, CA.</p>
+            <h5 className="text-lg font-bold">Service Areas</h5>
+            <p>Anywhere within Antelope Valley, CA.</p>
             {/* <ul className="space-y-2 ">
               <li>- Antelope Valley (Lancaster, Palmdale, etc.)</li>
               <li>- LA (Inglewood, Torrence, Longbeach)</li>
@@ -90,7 +94,10 @@ export default function Footer() {
         </div>
         <div className="not-prose flex flex-col justify-between gap-6 border-t border-t-foreground pt-5 md:flex-row md:items-center md:gap-2">
           <div className="flex gap-2">
-            <Link target="_blank" href={"https://www.instagram.com/mrofresh7/"}>
+            <Link
+              target="_blank"
+              href={"https://www.instagram.com/dougstractorworks/"}
+            >
               <Button size="icon">
                 <Instagram className="" />
               </Button>
@@ -98,7 +105,7 @@ export default function Footer() {
 
             <Link
               target="_blank"
-              href={"https://www.facebook.com/profile.php?id=61559887131693"}
+              href={"https://www.facebook.com/profile.php?id=61563286797653"}
             >
               <Button size="icon">
                 <Facebook className="" />

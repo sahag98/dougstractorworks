@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Link } from "next-view-transitions"
 
 import { siteConfig } from "@/config/site"
@@ -6,12 +5,8 @@ import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import AboutImages from "@/components/about-images"
 import FAQ from "@/components/faq"
-import Footer from "@/components/footer"
-import { Icons } from "@/components/icons"
-import { ModeToggle } from "@/components/mode-toggle"
 import Services from "@/components/services"
 import Testimonials from "@/components/testimonials"
-import Tractor from "@/components/tractor"
 
 export default function Home() {
   return (
@@ -22,16 +17,14 @@ export default function Home() {
         </h1>
         <p className="max-w-[42rem] text-start leading-normal text-muted-foreground sm:text-xl sm:leading-8 lg:text-center">
           {siteConfig.description} in
-          <span className="font-semibold"> Antelope Valley, CA</span>
+          <span className="font-semibold"> Antelope Valley, CA.</span>
         </p>
-        <div className="flex w-full flex-col justify-center gap-2 lg:flex-row">
+        <div className="flex w-full flex-col items-center justify-center gap-3 lg:flex-row">
           <Link
             href={`tel:${siteConfig.links.tel}`}
-            target="_blank"
-            rel="noopener noreferrer"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "animate-buttonheartbeat cursor-pointer text-base font-bold"
+              "w-11/12 animate-buttonheartbeat cursor-pointer text-base font-bold md:w-fit"
             )}
           >
             Get A Quote
@@ -40,10 +33,8 @@ export default function Home() {
             href={"/gallery"}
             className={cn(
               buttonVariants({ size: "lg", variant: "secondary" }),
-              "cursor-pointer text-sm  font-bold lg:text-lg"
+              "w-11/12 cursor-pointer text-sm font-bold md:w-fit lg:text-lg"
             )}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             View our Best Work
           </Link>

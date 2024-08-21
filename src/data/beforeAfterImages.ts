@@ -12,7 +12,7 @@ export const beforeAfterImages = [
   {
     id: 3,
     beforeImg: "/beforeAfter/barnbefore.jpeg",
-    afterImg: "/beforeAfter/barnafter.jpeg",
+    afterImg: "/beforeAfter/barnafter.png",
   },
   {
     id: 4,

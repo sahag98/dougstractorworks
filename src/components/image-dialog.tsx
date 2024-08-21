@@ -19,9 +19,8 @@ import {
 import { XIcon } from "lucide-react"
 import { createPortal } from "react-dom"
 
+import useClickOutside from "@/lib/useClickOutside"
 import { cn } from "@/lib/utils"
-
-// import useClickOutside from "@/hooks/useClickOutside"
 
 interface DialogContextType {
   isOpen: boolean
@@ -184,11 +183,11 @@ function DialogContent({ children, className, style }: DialogContent) {
     }
   }, [isOpen, triggerRef])
 
-  //   useClickOutside(containerRef, () => {
-  //     if (isOpen) {
-  //       setIsOpen(false)
-  //     }
-  //   })
+  useClickOutside(containerRef, () => {
+    if (isOpen) {
+      setIsOpen(false)
+    }
+  })
 
   return (
     <motion.div
@@ -234,7 +233,7 @@ function DialogContainer({ children }: DialogContainerProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           />
-          <div className="fixed inset-0 z-[999] flex items-center justify-center">
+          <div className="fixed inset-0 z-50 flex items-center justify-center">
             {children}
           </div>
         </>

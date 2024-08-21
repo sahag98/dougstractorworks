@@ -1,7 +1,10 @@
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 
-import { Button } from "@/components/ui/button"
+import { siteConfig } from "@/config/site"
+import { cn } from "@/lib/utils"
+import { Button, buttonVariants } from "@/components/ui/button"
 import Process from "@/components/process"
 import Values from "@/components/values"
 
@@ -11,7 +14,7 @@ const AboutPage = () => {
       <div className="flex flex-col items-center justify-between gap-10 px-4 py-10 md:py-0 lg:h-screen lg:flex-row lg:px-40">
         <section className="w-full space-y-10 lg:w-1/2">
           <h1 className="text-5xl font-bold text-primary">
-            Welcome to Doug&apos;s Tractors Works!
+            Welcome to Doug&apos;s Tractor Works!
           </h1>
           <p className="text-lg">
             We specialize in providing comprehensive tractor services to meet
@@ -26,7 +29,15 @@ const AboutPage = () => {
             Doug&apos;s Tractor Works is here to help you achieve your goals
             efficiently and effectively.
           </p>
-          <Button className="text-base">Call For More Information</Button>
+          <Link
+            href={`tel:${siteConfig.links.tel}`}
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "w-11/12  cursor-pointer text-base font-bold md:w-fit"
+            )}
+          >
+            Call For More Information
+          </Link>
         </section>
         <Image
           width={4032}

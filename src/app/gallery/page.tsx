@@ -1,11 +1,8 @@
 import React from "react"
-import Image from "next/image"
 import { beforeAfterImages } from "@/data/beforeAfterImages"
 import { XIcon } from "lucide-react"
 
 import { getVideos } from "@/lib/cloudflare"
-import { Button } from "@/components/ui/button"
-import BeforeAfterImage from "@/components/before-after"
 import {
   Dialog,
   DialogClose,
@@ -14,31 +11,8 @@ import {
   DialogImage,
   DialogTrigger,
 } from "@/components/image-dialog"
-import Process from "@/components/process"
-import Values from "@/components/values"
 
 const GalleryPage = async () => {
-  const beforeImage = "/tractorand.jpeg"
-  const afterImage = "/tractor.jpeg"
-
-  async function fetchVideos() {
-    "use server"
-    try {
-      const videos = await getVideos()
-      return videos
-    } catch (error) {
-      console.error("Error fetching videos:", error)
-      return []
-    }
-  }
-
-  // const videos = await fetchVideos()
-
-  // console.log("videos", videos)
-  // const response = await fetch("/api/videos")
-  // const data = await response.json()
-
-  // console.log(data)
   return (
     <div className="mt-36 flex h-full min-h-screen w-full flex-col items-center gap-2 px-4 md:px-24 lg:px-40 ">
       <h1 className="text-center text-5xl font-bold text-primary">
@@ -63,11 +37,11 @@ const GalleryPage = async () => {
                   ease: "easeInOut",
                 }}
               >
-                <DialogTrigger className="flex flex-col items-center justify-between">
+                <DialogTrigger className="items-cente flex flex-col justify-between gap-3">
                   <p className="text-center text-lg font-semibold">Before</p>
                   <DialogImage
                     src={beforeAfter.beforeImg}
-                    alt="Sony Style Store in the Sony Center complex - Berlin, Germany (2000)"
+                    alt="yard clean up before"
                     className="md:1/2 w-full rounded-md"
                   />
                 </DialogTrigger>
@@ -75,7 +49,7 @@ const GalleryPage = async () => {
                   <DialogContent className="relative">
                     <DialogImage
                       src={beforeAfter.beforeImg}
-                      alt="Sony Style Store in the Sony Center complex - Berlin, Germany (2000)"
+                      alt="yard clean up before"
                       className="h-auto w-full max-w-[90vw] rounded-[4px] object-cover lg:h-[90vh]"
                     />
                   </DialogContent>
@@ -100,20 +74,20 @@ const GalleryPage = async () => {
                   ease: "easeInOut",
                 }}
               >
-                <DialogTrigger className="flex flex-col items-start justify-start">
+                <DialogTrigger className="flex flex-col items-center justify-between gap-3">
                   <p className="text-center text-lg font-semibold">After</p>
                   <DialogImage
                     src={beforeAfter.afterImg}
-                    alt="Sony Style Store in the Sony Center complex - Berlin, Germany (2000)"
-                    className="md:1/2 w-full rounded-md"
+                    alt="clean up after"
+                    className="md:1/2 w-full  rounded-md"
                   />
                 </DialogTrigger>
                 <DialogContainer>
                   <DialogContent className="relative">
                     <DialogImage
                       src={beforeAfter.afterImg}
-                      alt="Sony Style Store in the Sony Center complex - Berlin, Germany (2000)"
-                      className="h-auto w-full max-w-[90vw] rounded-[4px] object-cover lg:h-[90vh]"
+                      alt="clean up after"
+                      className="h-auto w-full rounded-[4px] object-cover lg:h-[90vh]"
                     />
                   </DialogContent>
                   <DialogClose
