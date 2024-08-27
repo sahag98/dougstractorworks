@@ -38,12 +38,16 @@ export default function CloudImage({ images }: { images: any[] }) {
           {column.map((image, imageIndex) => (
             <div key={imageIndex} className="mb-4 rounded-md">
               <video
-                src={image.url}
                 preload="metadata"
                 playsInline
                 controls
                 className="h-auto w-full rounded-md"
               >
+                <source src={image.url} type="video/mp4" />
+                {/* <source
+                  src={image.url.replace(".mp4", ".webm")}
+                  type="video/webm"
+                /> */}
                 Sorry, your browser doesn&apos;t support embedded videos.
               </video>
             </div>
