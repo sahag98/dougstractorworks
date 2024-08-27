@@ -40,14 +40,12 @@ export default function CloudImage({ images }: { images: any[] }) {
               <video
                 preload="auto"
                 playsInline={true}
+                autoPlay={true}
+                muted={true}
                 controls
                 className="h-auto w-full rounded-md"
               >
                 <source src={image.url} type="video/mp4" />
-                {/* <source
-                  src={image.url.replace(".mp4", ".webm")}
-                  type="video/webm"
-                /> */}
                 Sorry, your browser doesn&apos;t support embedded videos.
               </video>
             </div>
