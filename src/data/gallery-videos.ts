@@ -57,7 +57,7 @@ export const galleryVideos = [
   {
     id: 12,
     title: "New life church",
-    url: "/gallery-videos/plowing.mov",
+    url: "/gallery-videos/newlife-church.mov",
   },
   {
     id: 13,
