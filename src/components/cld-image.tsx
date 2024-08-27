@@ -32,7 +32,7 @@ export default function CloudImage({ images }: { images: any[] }) {
   }, [images])
 
   return (
-    <div className="flex flex-col gap-4 sm:flex-row">
+    <div className="mt-5 flex flex-col gap-4 sm:flex-row">
       {columns.map((column, columnIndex) => (
         <div key={columnIndex} className="flex-1">
           {column.map((image, imageIndex) => (

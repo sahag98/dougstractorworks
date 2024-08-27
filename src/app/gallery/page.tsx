@@ -1,8 +1,8 @@
 import React from "react"
 import { beforeAfterImages } from "@/data/beforeAfterImages"
+import { galleryVideos } from "@/data/gallery-videos"
 import { XIcon } from "lucide-react"
 
-import cloudinary from "@/lib/cloudinary"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import CloudImage from "@/components/cld-image"
 import {
@@ -15,12 +15,6 @@ import {
 } from "@/components/image-dialog"
 
 const GalleryPage = async () => {
-  const result = await cloudinary.search
-    .expression("folder:dougstractorworks/* AND resource_type:video")
-    .sort_by("public_id", "desc")
-    .max_results(30)
-    .execute()
-
   return (
     <div className="mt-36 flex h-full min-h-screen w-full flex-col items-center gap-2 px-4 md:px-24 lg:px-40 ">
       <h1 className="text-center text-5xl font-bold text-primary">
@@ -126,7 +120,7 @@ const GalleryPage = async () => {
           </div>
         </TabsContent>
         <TabsContent value="Videos">
-          <CloudImage images={result.resources} />
+          <CloudImage images={galleryVideos} />
         </TabsContent>
       </Tabs>
     </div>

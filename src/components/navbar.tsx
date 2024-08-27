@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 import Image from "next/image"
-import { usePathname } from "next/navigation"
+import { usePathname, useSearchParams } from "next/navigation"
 import { Link } from "next-view-transitions"
 
 import { siteConfig } from "@/config/site"
@@ -13,7 +13,6 @@ import { Button } from "./ui/button"
 const Navbar = () => {
   const pathname = usePathname()
 
-  console.log(pathname)
   const [navOpen, setNavOpen] = useState(false)
   return (
     <nav className="fixed top-0 z-10 w-full border-b bg-background">
@@ -64,6 +63,7 @@ const Navbar = () => {
             <Link
               className={cn(pathname === "/" && " font-semibold text-primary")}
               href={"/"}
+              onClick={() => setNavOpen(false)}
             >
               Home
             </Link>
@@ -72,19 +72,37 @@ const Navbar = () => {
                 pathname === "/about" && " font-semibold text-primary"
               )}
               href={"/about"}
+              onClick={() => setNavOpen(false)}
             >
               About
             </Link>
-            <Link href={"/#services"}>Services</Link>
+            <Link
+              className={cn(
+                pathname === "/#services" && " font-semibold text-primary"
+              )}
+              href={"/#services"}
+              onClick={() => setNavOpen(false)}
+            >
+              Services
+            </Link>
             <Link
               className={cn(
                 pathname === "/gallery" && " font-semibold text-primary"
               )}
               href={"/gallery"}
+              onClick={() => setNavOpen(false)}
             >
               Gallery
             </Link>
-            <Link href={"#faq"}>FAQ</Link>
+            <Link
+              className={cn(
+                pathname === "/#faq" && " font-semibold text-primary"
+              )}
+              href={"#faq"}
+              onClick={() => setNavOpen(false)}
+            >
+              FAQ
+            </Link>
           </ul>
           <Link className="mt-4 flex md:hidden" href={"/book"}>
             <Button className="bg-primary text-base text-white">
