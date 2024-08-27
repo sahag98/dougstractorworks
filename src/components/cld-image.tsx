@@ -45,7 +45,7 @@ export default function CloudImage({ images }: { images: any[] }) {
                 controls
                 className="h-auto w-full rounded-md"
               >
-                <source src={image.url} type="video/mp4" />
+                <source src={`${image.url}#t=0.001`} type="video/mp4" />
                 Sorry, your browser doesn&apos;t support embedded videos.
               </video>
             </div>
