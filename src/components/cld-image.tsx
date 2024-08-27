@@ -40,8 +40,8 @@ export default function CloudImage({ images }: { images: any[] }) {
               <video
                 preload="auto"
                 playsInline={true}
-                autoPlay={true}
-                muted={true}
+                // autoPlay={true}
+                // muted={true}
                 controls
                 className="h-auto w-full rounded-md"
               >
