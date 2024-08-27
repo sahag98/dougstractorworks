@@ -40,8 +40,10 @@ export default function CloudImage({ images }: { images: any[] }) {
               <video
                 src={image.url}
                 preload="metadata"
+                autoPlay
+                muted
                 playsInline
-                poster={image?.poster}
+                // poster={image?.poster}
                 controls
                 className="h-auto w-full rounded-md"
               />
