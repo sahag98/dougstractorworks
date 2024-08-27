@@ -42,6 +42,8 @@ const AboutPage = () => {
         <Image
           width={4032}
           height={3024}
+          placeholder="blur"
+          blurDataURL={"/dougtractorblur.jpg"}
           className="w-full rounded-md lg:w-1/2"
           src={"/dougontractor.jpeg"}
           alt="about image"

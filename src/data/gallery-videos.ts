@@ -92,8 +92,8 @@ export const galleryVideos = [
   },
   {
     id: 19,
-    title: "sod all in",
-    url: "gallery-videos/sod-all-in.mov",
+    title: "weed cleaning",
+    url: "gallery-videos/weed-cleaning.mov",
   },
   {
     id: 20,
@@ -109,10 +109,5 @@ export const galleryVideos = [
     id: 22,
     title: "sprinkler",
     url: "gallery-videos/sprinkler.mov",
-  },
-  {
-    id: 23,
-    title: "weed cleaning",
-    url: "gallery-videos/weed-cleaning.mov",
   },
 ]
