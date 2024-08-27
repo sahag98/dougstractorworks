@@ -44,7 +44,7 @@ export default function CloudImage({ images }: { images: any[] }) {
                 controls
                 className="h-auto w-full rounded-md"
               >
-                Sorry, your browser doesn't support embedded videos.
+                Sorry, your browser doesn&apos;t support embedded videos.
               </video>
             </div>
           ))}
