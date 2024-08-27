@@ -39,7 +39,7 @@ export default function CloudImage({ images }: { images: any[] }) {
             <div key={imageIndex} className="mb-4 rounded-md">
               <video
                 preload="metadata"
-                playsInline
+                playsInline={true}
                 controls
                 className="h-auto w-full rounded-md"
               >
