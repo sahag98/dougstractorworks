@@ -1,0 +1,23 @@
+{
+  "status": "ready",
+  "originalFilePath": "videos/6-tons.mov",
+  "provider": "mux",
+  "providerMetadata": {
+    "mux": {
+      "uploadId": "8omkcnAT2P9021FEsPPsJULTwqI3t024eSUVtEvba16D00",
+      "assetId": "GTUGGqElm027EK46T73Y3BhmTGrFp00T38JHIWWoQVznw",
+      "playbackId": "twWFZbY8FdtSbd6Zs3GPpvG2ZZ134K02mr02mh8gu6CHc"
+    }
+  },
+  "createdAt": 1724793924539,
+  "updatedAt": 1724793932651,
+  "size": 13746827,
+  "sources": [
+    {
+      "src": "https://stream.mux.com/twWFZbY8FdtSbd6Zs3GPpvG2ZZ134K02mr02mh8gu6CHc.m3u8",
+      "type": "application/x-mpegURL"
+    }
+  ],
+  "poster": "https://image.mux.com/twWFZbY8FdtSbd6Zs3GPpvG2ZZ134K02mr02mh8gu6CHc/thumbnail.webp",
+  "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwAgCdASoQAAkAAQAcJYgCdAEUqps24VdGHAD+qh//r+699/U81UWn9kxGVwnb+JRF3MxsQXN6oTVNc99Qk6J9Z3oHqXYrFX+DzHVjo9dhHzJmZtXHg33/DnmZ1HnBemlTfvafYu2z8zswy1xyEht7hBNOGb8neU1/1r8EFp2owBAA"
+}

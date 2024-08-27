@@ -1,8 +1,7 @@
-import React, { Suspense } from "react"
+import React from "react"
 import { beforeAfterImages } from "@/data/beforeAfterImages"
 import { galleryVideos } from "@/data/gallery-videos"
 import { XIcon } from "lucide-react"
-import Video from "next-video"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import CloudImage from "@/components/cld-image"

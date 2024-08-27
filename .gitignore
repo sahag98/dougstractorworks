@@ -41,3 +41,17 @@ videos/*
 !videos/*.js
 !videos/*.ts
 public/_next-video
+
+# next-video
+public/vids/*
+!public/vids/*.json
+!public/vids/*.js
+!public/vids/*.ts
+public/_next-video
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video

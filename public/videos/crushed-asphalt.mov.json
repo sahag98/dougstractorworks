@@ -1,1 +1,23 @@
-{"status":"ready","originalFilePath":"videos/crushed-asphalt.mov","provider":"mux","providerMetadata":{"mux":{"uploadId":"02A2fskMQwVPb200vxLmk02VrcDuhdGK2KS004ADSnGqsPM","assetId":"GOnUbdghWWPLZY2WMvslI4kaa009N3s5qgsZ00uT7PHro","playbackId":"xkxZwX00IIkbqAF01s02FMspTnnIbD79YsUVUKGNNPxKa4"}},"createdAt":1724792777340,"updatedAt":1724792828691,"size":12578762,"sources":[{"src":"https://stream.mux.com/xkxZwX00IIkbqAF01s02FMspTnnIbD79YsUVUKGNNPxKa4.m3u8","type":"application/x-mpegURL"}],"poster":"https://image.mux.com/xkxZwX00IIkbqAF01s02FMspTnnIbD79YsUVUKGNNPxKa4/thumbnail.webp","blurDataURL":"data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQAgCdASoQAAkAAQAcJYgCdAEVz5lP4jTwAP7mla/jDm7aSvrUHfPGZvbDY91N/P3aLLbumE/nQVv3vpdRSomv9qjplLfr/1ck7ZHaWAL8aHzFGT1RU+ih2IHbCRcSifAfYO6IZlZpYJ28b/c/pq7qG4pLo3mjfLSin0YNJXRdMiY80BhLlAAA"}
+{
+  "status": "ready",
+  "originalFilePath": "videos/crushed-asphalt.mov",
+  "provider": "mux",
+  "providerMetadata": {
+    "mux": {
+      "uploadId": "02A2fskMQwVPb200vxLmk02VrcDuhdGK2KS004ADSnGqsPM",
+      "assetId": "GOnUbdghWWPLZY2WMvslI4kaa009N3s5qgsZ00uT7PHro",
+      "playbackId": "xkxZwX00IIkbqAF01s02FMspTnnIbD79YsUVUKGNNPxKa4"
+    }
+  },
+  "createdAt": 1724792777340,
+  "updatedAt": 1724792828691,
+  "size": 12578762,
+  "sources": [
+    {
+      "src": "https://stream.mux.com/xkxZwX00IIkbqAF01s02FMspTnnIbD79YsUVUKGNNPxKa4.m3u8",
+      "type": "application/x-mpegURL"
+    }
+  ],
+  "poster": "https://image.mux.com/xkxZwX00IIkbqAF01s02FMspTnnIbD79YsUVUKGNNPxKa4/thumbnail.webp",
+  "blurDataURL": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQAgCdASoQAAkAAQAcJYgCdAEVz5lP4jTwAP7mla/jDm7aSvrUHfPGZvbDY91N/P3aLLbumE/nQVv3vpdRSomv9qjplLfr/1ck7ZHaWAL8aHzFGT1RU+ih2IHbCRcSifAfYO6IZlZpYJ28b/c/pq7qG4pLo3mjfLSin0YNJXRdMiY80BhLlAAA"
+}

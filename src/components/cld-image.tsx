@@ -38,7 +38,7 @@ export default function CloudImage({ images }: { images: any[] }) {
         <div key={columnIndex} className="flex-1">
           {column.map((image, imageIndex) => (
             <div key={imageIndex} className="mb-4 rounded-md">
-              <Video
+              <video
                 src={image.url}
                 controls
                 className="h-auto w-full rounded-md"
