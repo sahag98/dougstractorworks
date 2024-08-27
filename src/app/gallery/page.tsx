@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Suspense } from "react"
 import { beforeAfterImages } from "@/data/beforeAfterImages"
 import { galleryVideos } from "@/data/gallery-videos"
 import { XIcon } from "lucide-react"

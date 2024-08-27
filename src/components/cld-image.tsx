@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { Suspense, useEffect, useRef, useState } from "react"
 
 export default function CloudImage({ images }: { images: any[] }) {
   const [columns, setColumns] = useState<any[][]>([[], [], []])
