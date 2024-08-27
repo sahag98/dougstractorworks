@@ -21,7 +21,7 @@ const Navbar = () => {
           <Image
             src={siteConfig.logo}
             width={1000}
-            className="w-20 lg:w-24"
+            className="w-16 lg:w-20"
             height={1000}
             priority
             alt="dougs tractor works logo"
