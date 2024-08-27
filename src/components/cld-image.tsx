@@ -40,7 +40,7 @@ export default function CloudImage({ images }: { images: any[] }) {
             <div key={imageIndex} className="mb-4 rounded-md">
               <Video
                 src={image.url}
-                // preload="metadata"
+                preload="metadata"
                 playsInline
                 // poster={image.url}
                 controls
