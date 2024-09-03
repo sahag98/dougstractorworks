@@ -1,14 +1,8 @@
 export const galleryVideos = [
   {
-    id: 1,
-    title: "6 tons",
-    url: "/gallery-videos/6-tons.mov",
-    poster: "/service-images/digging.jpeg",
-  },
-  {
     id: 2,
     title: "mowing grass",
-    url: "/gallery-videos/mowing-grass.mov",
+    url: "/gallery-videos/grass mowing.mov",
   },
   {
     id: 3,
@@ -20,21 +14,21 @@ export const galleryVideos = [
     title: "yard cleaning",
     url: "gallery-videos/cleaning-yard.mov",
   },
-  {
-    id: 5,
-    title: "crushed asphalt",
-    url: "gallery-videos/crushed-asphalt.mov",
-  },
+  // {
+  //   id: 5,
+  //   title: "crushed asphalt",
+  //   url: "gallery-videos/crushed-asphalt.mov",
+  // },
   {
     id: 6,
     title: "dead tree cut",
     url: "gallery-videos/dead-tree-down.mov",
   },
-  {
-    id: 7,
-    title: "dead tree",
-    url: "gallery-videos/dead-tree.mov",
-  },
+  // {
+  //   id: 7,
+  //   title: "dead tree",
+  //   url: "gallery-videos/dead-tree.mov",
+  // },
   {
     id: 8,
     title: "dirt truck",

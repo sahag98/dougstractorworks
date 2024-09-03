@@ -1,6 +1,9 @@
+"use client"
+
 import React from "react"
 import { beforeAfterImages } from "@/data/beforeAfterImages"
 import { galleryVideos } from "@/data/gallery-videos"
+import { IKImage } from "imagekitio-next"
 import { XIcon } from "lucide-react"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -14,6 +17,8 @@ import {
   DialogTrigger,
 } from "@/components/image-dialog"
 
+const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT!
+
 const GalleryPage = async () => {
   return (
     <div className="mt-36 flex h-full min-h-screen w-full flex-col items-center gap-2 px-4 md:px-24 lg:px-40 ">
@@ -23,6 +28,7 @@ const GalleryPage = async () => {
       <p className="text-lg">
         Click on the video or image tab to see our best work.
       </p>
+
       <Tabs defaultValue="Images" className="w-full">
         <TabsList className="w-full">
           <TabsTrigger className="w-1/2 text-lg" value="Images">
@@ -33,7 +39,6 @@ const GalleryPage = async () => {
           </TabsTrigger>
         </TabsList>
         <TabsContent value="Images">
-          {" "}
           <div className="grid grid-cols-1 gap-5 py-3 sm:grid-cols-2 lg:grid-cols-2">
             {beforeAfterImages.map((beforeAfter) => (
               <div key={beforeAfter.id} className="flex flex-col gap-2">
@@ -48,17 +53,32 @@ const GalleryPage = async () => {
                       <p className="text-center text-lg font-semibold">
                         Before
                       </p>
-                      <DialogImage
+                      <IKImage
+                        urlEndpoint={urlEndpoint}
+                        path={beforeAfter.beforeImg}
+                        width={600}
+                        height={600}
+                        lqip={{ active: true, quality: 20 }}
+                        loading="lazy"
+                        alt="alt image"
+                        className="md:1/2 w-full rounded-md"
+                      />
+                      {/* <DialogImage
                         src={beforeAfter.beforeImg}
                         alt="yard clean up before"
                         className="md:1/2 w-full rounded-md"
-                      />
+                      /> */}
                     </DialogTrigger>
                     <DialogContainer>
                       <DialogContent className="relative">
-                        <DialogImage
-                          src={beforeAfter.beforeImg}
-                          alt="yard clean up before"
+                        <IKImage
+                          urlEndpoint={urlEndpoint}
+                          path={beforeAfter.beforeImg}
+                          width={600}
+                          height={600}
+                          lqip={{ active: true, quality: 20 }}
+                          loading="lazy"
+                          alt="alt image"
                           className="h-auto w-full max-w-[90vw] rounded-[4px] object-cover lg:h-[90vh]"
                         />
                       </DialogContent>
@@ -85,17 +105,27 @@ const GalleryPage = async () => {
                   >
                     <DialogTrigger className="flex flex-col items-center justify-between gap-3">
                       <p className="text-center text-lg font-semibold">After</p>
-                      <DialogImage
-                        src={beforeAfter.afterImg}
-                        alt="clean up after"
-                        className="md:1/2 w-full  rounded-md"
+                      <IKImage
+                        urlEndpoint={urlEndpoint}
+                        path={beforeAfter.afterImg}
+                        width={600}
+                        height={600}
+                        lqip={{ active: true, quality: 20 }}
+                        loading="lazy"
+                        alt="alt image"
+                        className="md:1/2 w-full rounded-md"
                       />
                     </DialogTrigger>
                     <DialogContainer>
                       <DialogContent className="relative">
-                        <DialogImage
-                          src={beforeAfter.afterImg}
-                          alt="clean up after"
+                        <IKImage
+                          urlEndpoint={urlEndpoint}
+                          path={beforeAfter.afterImg}
+                          width={600}
+                          height={600}
+                          lqip={{ active: true, quality: 20 }}
+                          loading="lazy"
+                          alt="alt image"
                           className="h-auto w-full rounded-[4px] object-cover lg:h-[90vh]"
                         />
                       </DialogContent>
