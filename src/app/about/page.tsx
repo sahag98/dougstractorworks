@@ -5,6 +5,7 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Button, buttonVariants } from "@/components/ui/button"
+import AboutCta from "@/components/about-cta"
 import Process from "@/components/process"
 import Values from "@/components/values"
 
@@ -29,7 +30,7 @@ const AboutPage = () => {
             Doug&apos;s Tractor Works is here to help you achieve your goals
             efficiently and effectively.
           </p>
-          <Link
+          {/* <Link
             href={`tel:${siteConfig.links.tel}`}
             className={cn(
               buttonVariants({ variant: "outline" }),
@@ -37,7 +38,7 @@ const AboutPage = () => {
             )}
           >
             Call For More Information
-          </Link>
+          </Link> */}
         </section>
         <Image
           width={4032}
@@ -51,6 +52,7 @@ const AboutPage = () => {
       </div>
       <Values />
       <Process />
+      <AboutCta />
     </div>
   )
 }
