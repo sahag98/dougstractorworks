@@ -1,5 +1,6 @@
-import React from "react"
+import React, { Suspense } from "react"
 import { galleryVideos } from "@/data/gallery-videos"
+import { list } from "@vercel/blob"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import CloudImage from "@/components/cld-image"
@@ -13,7 +14,7 @@ const GalleryPage = async () => {
       <h1 className="text-center text-5xl font-bold text-primary">
         Our Best Work
       </h1>
-      <p className="text-lg">
+      <p className="text-base md:text-lg">
         Click on the video or image tab to see our best work.
       </p>
 
@@ -30,7 +31,23 @@ const GalleryPage = async () => {
           <GalleryImages urlEndpoint={urlEndpoint} />
         </TabsContent>
         <TabsContent value="Videos">
-          <CloudImage images={galleryVideos} />
+          {/* <div className="grid lg:grid-cols-3">
+            <Suspense fallback={<p>Loading video...</p>}>
+              <VideoComponent fileName="doug-1" />
+            </Suspense>
+            <Suspense fallback={<p>Loading video...</p>}>
+              <VideoComponent fileName="doug-2" />
+            </Suspense>
+            <Suspense fallback={<p>Loading video...</p>}>
+              <VideoComponent fileName="doug-3" />
+            </Suspense>
+            <Suspense fallback={<p>Loading video...</p>}>
+              <VideoComponent fileName="doug-4" />
+            </Suspense>
+          </div> */}
+          <Suspense fallback={<p>Loading video...</p>}>
+            <CloudImage images={galleryVideos} />
+          </Suspense>
         </TabsContent>
       </Tabs>
     </div>
@@ -38,3 +55,18 @@ const GalleryPage = async () => {
 }
 
 export default GalleryPage
+
+// async function VideoComponent({ fileName }: any) {
+//   const { blobs } = await list({
+//     prefix: fileName,
+//     limit: 1,
+//   })
+//   const { url } = blobs[0]
+
+//   return (
+//     <video preload="auto" playsInline={true} controls aria-label="Video player">
+//       <source src={`${url}#t=0.001`} type="video/mp4" />
+//       Your browser does not support the video tag.
+//     </video>
+//   )
+// }
