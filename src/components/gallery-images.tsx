@@ -3,20 +3,6 @@
 import React from "react"
 import Image from "next/image"
 import { beforeAfterImages } from "@/data/beforeAfterImages"
-import { galleryVideos } from "@/data/gallery-videos"
-import { IKImage } from "imagekitio-next"
-import { XIcon } from "lucide-react"
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import CloudImage from "@/components/cld-image"
-import {
-  Dialog,
-  DialogClose,
-  DialogContainer,
-  DialogContent,
-  DialogImage,
-  DialogTrigger,
-} from "@/components/image-dialog"
 
 const GalleryImages = ({ urlEndpoint }: { urlEndpoint: string }) => {
   console.log("url endpoint: ", urlEndpoint)
@@ -30,7 +16,6 @@ const GalleryImages = ({ urlEndpoint }: { urlEndpoint: string }) => {
     width: number
     quality?: number
   }) => {
-    console.log("quality: ", quality)
     if (src[0] === "/") src = src.slice(1)
     const params = [`w-${width}`]
     if (quality) {
@@ -40,7 +25,6 @@ const GalleryImages = ({ urlEndpoint }: { urlEndpoint: string }) => {
     if (urlEndpoint[urlEndpoint.length - 1] === "/")
       urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1)
 
-    console.log(`${urlEndpoint}/${src}?tr=${paramsString}`)
     return `${urlEndpoint}/${src}?tr=${paramsString}`
   }
 
@@ -61,11 +45,6 @@ const GalleryImages = ({ urlEndpoint }: { urlEndpoint: string }) => {
                 alt="alt image"
                 className="w-full rounded-md"
               />
-              {/* <DialogImage
-                        src={beforeAfter.beforeImg}
-                        alt="yard clean up before"
-                        className="md:1/2 w-full rounded-md"
-                      /> */}
             </div>
 
             <div className="flex flex-col items-center justify-between gap-3">

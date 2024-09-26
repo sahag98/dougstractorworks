@@ -1,5 +1,4 @@
 import React, { Suspense } from "react"
-import { galleryVideos } from "@/data/gallery-videos"
 import { list } from "@vercel/blob"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -34,7 +33,7 @@ const GalleryPage = async () => {
         </TabsContent>
         <TabsContent value="Videos">
           <Suspense fallback={<p>Loading video...</p>}>
-            <CloudImage images={blobs} />
+            <CloudImage videos={blobs} />
           </Suspense>
           {/* <div className="grid lg:grid-cols-3">
             <Suspense fallback={<p>Loading video...</p>}>
