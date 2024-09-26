@@ -41,7 +41,7 @@ const AboutImages = () => {
     <Carousel
       setApi={setApi}
       plugins={[plugin.current]}
-      className="w-full lg:w-1/2"
+      className="w-full lg:w-2/3"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >

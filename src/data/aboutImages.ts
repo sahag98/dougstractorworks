@@ -5,30 +5,34 @@ export const aboutImages = [
   },
   {
     id: 2,
-    url: "/tractor.jpeg",
+    url: "/tractor-and-mower.jpeg",
   },
   {
     id: 3,
+    url: "/tractor.jpeg",
+  },
+  {
+    id: 4,
     url: "/tractorlandscape.jpeg",
   },
   {
-    id: 7,
+    id: 5,
     url: "/tractormud.jpeg",
   },
   {
-    id: 8,
+    id: 6,
     url: "/tumbleweed.jpeg",
   },
   {
-    id: 9,
+    id: 7,
     url: "/tractordirt.jpg",
   },
   {
-    id: 10,
+    id: 8,
     url: "/tractorsun.jpg",
   },
   {
-    id: 11,
+    id: 9,
     url: "/tractortree.jpg",
   },
 ]

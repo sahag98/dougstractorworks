@@ -46,13 +46,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [siteConfig.ogImage],
-    creator: "@_rdev7",
-  },
   icons: {
     icon: "/favicon.ico",
   },
@@ -65,7 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            "relative min-h-screen bg-background  antialiased",
+            "relative min-h-screen bg-background antialiased",
             inter.className
           )}
         >

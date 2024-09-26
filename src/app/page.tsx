@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
         <p className="max-w-[42rem] text-start leading-normal text-muted-foreground sm:text-xl sm:leading-8 lg:text-center">
           {siteConfig.description} in
-          <span className="font-semibold"> Antelope Valley, CA.</span>
+          <span className="font-semibold"> Lancaster and Palmdale, CA.</span>
         </p>
         <div className="flex w-full flex-col items-center justify-center gap-3 lg:flex-row">
           <Link
@@ -33,7 +33,7 @@ export default function Home() {
             href={"/gallery"}
             className={cn(
               buttonVariants({ size: "lg", variant: "secondary" }),
-              "w-11/12 cursor-pointer text-sm font-bold md:w-fit lg:text-lg"
+              "w-11/12 cursor-pointer text-sm font-semibold md:w-fit lg:text-lg"
             )}
           >
             View our Best Work
@@ -44,7 +44,7 @@ export default function Home() {
       <div className="flex w-full flex-col items-center justify-between gap-3 bg-primary/25 px-4 py-12 text-foreground md:py-24 lg:flex-row lg:px-40 lg:py-32">
         <section className="flex flex-col items-start gap-3">
           <h3 className="text-lg font-medium">About</h3>
-          <h2 className="w-full text-2xl font-semibold lg:w-2/3 lg:text-5xl">
+          <h2 className="w-full text-2xl font-semibold md:w-3/4 lg:text-5xl">
             Welcome to Doug&apos;s Tractor Works
           </h2>
           <p className="text-lg font-medium lg:text-xl">

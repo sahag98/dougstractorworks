@@ -17,5 +17,5 @@ export const siteConfig: SiteConfig = {
     tel: "310-850-9926",
     github: "https://github.com/redpangilinan/next-entree",
   },
-  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.jpg`,
+  ogImage: `${env.NEXT_PUBLIC_APP_URL}/icon.jpg`,
 }
