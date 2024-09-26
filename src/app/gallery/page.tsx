@@ -9,6 +9,8 @@ import GalleryImages from "@/components/gallery-images"
 const urlEndpoint = process.env.IMAGE_KIT_URL_ENDPOINT!
 
 const GalleryPage = async () => {
+  const { blobs } = await list()
+
   return (
     <div className="mt-36 flex h-full min-h-screen w-full flex-col items-center gap-2 px-4 md:px-24 lg:px-40 ">
       <h1 className="text-center text-5xl font-bold text-primary">
@@ -31,6 +33,9 @@ const GalleryPage = async () => {
           <GalleryImages urlEndpoint={urlEndpoint} />
         </TabsContent>
         <TabsContent value="Videos">
+          <Suspense fallback={<p>Loading video...</p>}>
+            <CloudImage images={blobs} />
+          </Suspense>
           {/* <div className="grid lg:grid-cols-3">
             <Suspense fallback={<p>Loading video...</p>}>
               <VideoComponent fileName="doug-1" />
@@ -45,9 +50,9 @@ const GalleryPage = async () => {
               <VideoComponent fileName="doug-4" />
             </Suspense>
           </div> */}
-          <Suspense fallback={<p>Loading video...</p>}>
+          {/* <Suspense fallback={<p>Loading video...</p>}>
             <CloudImage images={galleryVideos} />
-          </Suspense>
+          </Suspense> */}
         </TabsContent>
       </Tabs>
     </div>
@@ -55,18 +60,3 @@ const GalleryPage = async () => {
 }
 
 export default GalleryPage
-
-// async function VideoComponent({ fileName }: any) {
-//   const { blobs } = await list({
-//     prefix: fileName,
-//     limit: 1,
-//   })
-//   const { url } = blobs[0]
-
-//   return (
-//     <video preload="auto" playsInline={true} controls aria-label="Video player">
-//       <source src={`${url}#t=0.001`} type="video/mp4" />
-//       Your browser does not support the video tag.
-//     </video>
-//   )
-// }

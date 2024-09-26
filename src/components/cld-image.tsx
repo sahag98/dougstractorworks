@@ -1,6 +1,6 @@
 "use client"
 
-import { Suspense, useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function CloudImage({ images }: { images: any[] }) {
   const [columns, setColumns] = useState<any[][]>([[], [], []])
@@ -37,20 +37,18 @@ export default function CloudImage({ images }: { images: any[] }) {
         <div key={columnIndex} className="flex-1">
           {column.map((image, imageIndex) => (
             <div key={imageIndex} className="mb-4 rounded-md">
-              <Suspense fallback={<p>Loading video...</p>}>
-                <video
-                  preload="auto"
-                  playsInline={true}
-                  // autoPlay={true}
-                  // muted={true}
+              <video
+                preload="auto"
+                playsInline={true}
+                // autoPlay={true}
+                // muted={true}
 
-                  controls
-                  className="h-auto w-full rounded-md"
-                >
-                  <source src={`${image.url}#t=0.001`} type="video/mp4" />
-                  Sorry, your browser doesn&apos;t support embedded videos.
-                </video>
-              </Suspense>
+                controls
+                className="h-auto w-full rounded-md"
+              >
+                <source src={`${image.url}#t=0.001`} type="video/mp4" />
+                Sorry, your browser doesn&apos;t support embedded videos.
+              </video>
             </div>
           ))}
         </div>
