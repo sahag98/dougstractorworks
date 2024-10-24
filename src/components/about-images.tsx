@@ -53,7 +53,7 @@ const AboutImages = () => {
           >
             <Image
               alt="image"
-              loading="eager"
+              loading="lazy"
               className="w-full rounded-md object-cover"
               src={images.url}
               width={1000}

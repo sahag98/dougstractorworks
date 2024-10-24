@@ -61,7 +61,7 @@ export default function Home() {
             Learn More
           </Link>
         </section>
-        {/* <AboutImages /> */}
+        <AboutImages />
       </div>
       <Services />
       <Testimonials />
