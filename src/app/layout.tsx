@@ -143,6 +143,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <Script
+            id="schema"
             strategy="beforeInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
