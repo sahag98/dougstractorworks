@@ -142,11 +142,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
             inter.className
           )}
         >
-          <Script
+          {/* <Script
             id="schema"
-            strategy="beforeInteractive"
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          />
+          /> */}
           <Navbar />
           {children}
           <Footer />
