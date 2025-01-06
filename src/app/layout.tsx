@@ -16,11 +16,11 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-// export const viewport: Viewport = {
-//   width: "device-width",
-//   initialScale: 1,
-//   themeColor: "#ffffff",
-// }
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#ffffff",
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url.base),
