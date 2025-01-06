@@ -99,38 +99,6 @@ export const metadata: Metadata = {
 //   ],
 // }
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://dminhvu.com/nextjs-seo",
-  },
-  headline: "Next.js SEO: The Complete Checklist to Boost Your Site Ranking",
-  description:
-    "Learn how to optimize your Next.js website for SEO by following this complete checklist.",
-  image:
-    "https://ik.imagekit.io/dminhvu/assets/nextjs-seo/thumbnail.png?tr=f-png",
-  dateCreated: "2024-01-11T11:35:00+07:00",
-  datePublished: "2024-01-11T11:35:00+07:00",
-  dateModified: "2024-01-11T11:35:00+07:00",
-  author: {
-    "@type": "Person",
-    name: "Minh Vu",
-    url: "https://www.linkedin.com/in/dminhvu02",
-  },
-  publisher: {
-    "@type": "Person",
-    name: "Minh Vu",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://dminhvu.com/avatar_zoom.jpg",
-    },
-  },
-  inLanguage: "en-US",
-  isFamilyFriendly: "true",
-}
-
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <ViewTransitions>

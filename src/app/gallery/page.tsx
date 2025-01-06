@@ -9,28 +9,28 @@ import GalleryImages from "@/components/gallery-images"
 
 const urlEndpoint = process.env.IMAGE_KIT_URL_ENDPOINT!
 
-// export const metadata: Metadata = {
-//   title: "Gallery | Doug's Tractor Works",
-//   description:
-//     "We specialize in providing comprehensive tractor services to meet all your agricultural and land management needs.",
-//   keywords: siteConfig.keywords,
-//   openGraph: {
-//     type: "website",
-//     locale: "en_US",
-//     url: siteConfig.url.base,
-//     title: siteConfig.name,
-//     description: siteConfig.description,
-//     siteName: siteConfig.name,
-//     images: [
-//       {
-//         url: siteConfig.ogImage,
-//         width: 1200,
-//         height: 630,
-//         alt: siteConfig.name,
-//       },
-//     ],
-//   },
-// }
+export const metadata: Metadata = {
+  title: "Gallery | Doug's Tractor Works",
+  description:
+    "We specialize in providing comprehensive tractor services to meet all your agricultural and land management needs.",
+  keywords: siteConfig.keywords,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url.base,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+}
 
 const GalleryPage = async () => {
   const { blobs } = await list()
