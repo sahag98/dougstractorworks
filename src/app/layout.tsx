@@ -1,8 +1,8 @@
 import "@/styles/globals.css"
 
-import type { Metadata, Viewport } from "next"
+import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import Script from "next/script"
+import { Analytics } from "@vercel/analytics/react"
 import { ViewTransitions } from "next-view-transitions"
 
 import { siteConfig } from "@/config/site"
@@ -34,6 +34,10 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    noarchive: true,
+    nosnippet: true,
+    noimageindex: true,
+    nocache: true,
     "max-image-preview": "large",
     "max-snippet": -1,
     "max-video-preview": -1,
@@ -112,6 +116,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Navbar />
           {children}
           <Footer />
+          <Analytics />
         </body>
       </html>
     </ViewTransitions>
