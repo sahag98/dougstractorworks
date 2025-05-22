@@ -84,13 +84,12 @@ export default function QuoteForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full space-y-6 rounded-lg bg-background p-6 shadow-lg"
+        className="w-full space-y-6 rounded-lg border border-primary/20 bg-background p-6 shadow-lg"
       >
         <div className="space-y-2">
           <h2 className="text-2xl font-bold">Get A Quote Now</h2>
           <p className="text-sm text-muted-foreground">
-            Fill out the form below and we&apos;ll get back to you within 24
-            hours
+            Fill out this form and we&apos;ll get back to you within 24 hours!
           </p>
         </div>
 
