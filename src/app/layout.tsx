@@ -60,9 +60,8 @@ export const metadata: Metadata = {
       },
     ],
   },
-
   icons: {
-    icon: "/favicon.ico",
+    icon: "/website-logo.png",
   },
 }
 
