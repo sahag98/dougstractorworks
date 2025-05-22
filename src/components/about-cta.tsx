@@ -28,10 +28,10 @@ const AboutCta = () => {
               outdoor space for you! Contact us today for a free quote.
             </p>
             <Link
-              href={`tel:${siteConfig.links.tel}`}
+              href={`/`}
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
-                "text-base font-bold"
+                "text-base font-bold text-white"
               )}
             >
               Get A Quote

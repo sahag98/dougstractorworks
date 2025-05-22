@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import Image from "next/image"
 import { usePathname, useSearchParams } from "next/navigation"
+import { Phone } from "lucide-react"
 import { Link } from "next-view-transitions"
 
 import { siteConfig } from "@/config/site"
@@ -104,14 +105,20 @@ const Navbar = () => {
               FAQ
             </Link>
           </ul>
-          <Link className="mt-4 flex md:hidden" href={"/book"}>
+          <Link
+            className="mt-4 flex md:hidden"
+            href={`tel:${siteConfig.links.tel}`}
+          >
             <Button className="bg-primary text-base text-white">
-              Book Now
+              {siteConfig.links.tel}
             </Button>
           </Link>
         </div>
-        <Link className="hidden md:block" href={"/book"}>
-          <Button className="bg-primary text-base text-white">Book Now</Button>
+        <Link className="hidden md:block" href={`tel:${siteConfig.links.tel}`}>
+          <Button className="gap-2 bg-primary text-base font-bold text-white">
+            <Phone />
+            {siteConfig.links.tel}
+          </Button>
         </Link>
       </div>
     </nav>

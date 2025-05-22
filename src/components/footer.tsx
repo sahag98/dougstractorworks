@@ -32,7 +32,7 @@ export default function Footer() {
             <p className="text-lg text-foreground">
               <Balancer>{siteConfig.description}.</Balancer>
             </p>
-            <Link href={`tel:${siteConfig.links.tel}`} target="_blank">
+            <Link href={`#quote`} className="scroll-smooth">
               <Button className="text-base">Get A Quote</Button>
             </Link>
           </div>

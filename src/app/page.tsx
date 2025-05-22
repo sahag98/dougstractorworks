@@ -5,40 +5,46 @@ import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import AboutImages from "@/components/about-images"
 import FAQ from "@/components/faq"
+import QuoteForm from "@/components/quote-form"
 import Services from "@/components/services"
 import Testimonials from "@/components/testimonials"
 
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center">
-      <div className="relative flex min-h-screen w-full flex-col items-center justify-center gap-4 px-4 text-center lg:h-screen">
-        <h1 className="text-start text-5xl font-bold sm:text-5xl md:text-6xl lg:text-center lg:text-7xl">
-          {siteConfig.name}
-        </h1>
-        <p className="max-w-[42rem] text-start leading-normal text-muted-foreground sm:text-xl sm:leading-8 lg:text-center">
-          {siteConfig.description} in
-          <span className="font-semibold"> Lancaster and Palmdale, CA.</span>
-        </p>
-        <div className="flex w-full flex-col items-center justify-center gap-3 lg:flex-row">
-          <Link
-            href={`tel:${siteConfig.links.tel}`}
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "w-11/12 animate-buttonheartbeat cursor-pointer text-base font-bold md:w-fit"
-            )}
-          >
-            Get A Quote
-          </Link>
-          <Link
-            href={"/gallery"}
-            className={cn(
-              buttonVariants({ size: "lg", variant: "secondary" }),
-              "w-11/12 cursor-pointer text-sm font-semibold md:w-fit lg:text-lg"
-            )}
-          >
-            View our Best Work
-          </Link>
-        </div>
+      <div className="relative flex min-h-screen w-full flex-col items-center justify-center gap-4 px-4 py-40 text-center md:flex-row md:px-40 md:py-0 lg:h-screen">
+        <section className="flex flex-1 flex-col items-start justify-start gap-4">
+          <h1 className="text-start text-5xl font-bold sm:text-5xl md:text-5xl">
+            {siteConfig.name}
+          </h1>
+          <p className="max-w-[42rem] text-start leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+            {siteConfig.description} in
+            <span className="font-semibold"> Lancaster and Palmdale, CA.</span>
+          </p>
+          <div className="flex w-full flex-col items-center gap-4 lg:flex-row">
+            {/* <Link
+              href={`tel:${siteConfig.links.tel}`}
+              className={cn(
+                buttonVariants({ size: "lg" }),
+                "w-11/12 animate-buttonheartbeat cursor-pointer text-base font-bold md:w-fit"
+              )}
+            >
+              Get A Quote
+            </Link> */}
+            <Link
+              href={"/gallery"}
+              className={cn(
+                buttonVariants({ size: "lg", variant: "secondary" }),
+                "w-11/12 cursor-pointer text-sm font-semibold md:w-fit lg:text-lg"
+              )}
+            >
+              View our Best Work
+            </Link>
+          </div>
+        </section>
+        <section className="flex-1" id="quote">
+          <QuoteForm />
+        </section>
       </div>
 
       <div className="flex w-full flex-col items-center justify-between gap-3 bg-primary/25 px-4 py-12 text-foreground md:py-24 lg:flex-row lg:px-40 lg:py-32">
